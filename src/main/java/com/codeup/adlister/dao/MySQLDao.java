@@ -1,10 +1,12 @@
+package com.codeup.adlister.dao;
+
 import com.mysql.cj.jdbc.Driver;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MySQLDao implements Ads{
+public class MySQLDao implements Ads {
 
     private Connection connection;
 
