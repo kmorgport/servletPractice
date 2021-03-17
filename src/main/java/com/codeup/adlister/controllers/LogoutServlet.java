@@ -1,5 +1,7 @@
 package com.codeup.adlister.controllers;
 
+import models.User;
+
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -12,5 +14,6 @@ public class LogoutServlet extends HttpServlet {
         request.getSession().removeAttribute("user");
         request.getSession().invalidate();
         response.sendRedirect("/login");
+
     }
 }

@@ -20,7 +20,7 @@ public class MySQLUsersDao implements Users{
                     config.getPassword()
             );
         } catch (SQLException e) {
-            throw new RuntimeException("Error connecting to the database!", e)
+            throw new RuntimeException("Error connecting to the database!", e);
         }
     }
     @Override
@@ -41,6 +41,7 @@ public class MySQLUsersDao implements Users{
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+        return null;
     }
 
 

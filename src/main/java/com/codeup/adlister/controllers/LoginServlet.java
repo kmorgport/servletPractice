@@ -24,7 +24,7 @@ public class LoginServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        User userDb = DaoFactory.
+//        User userDb = DaoFactory;
         boolean validAttempt = username.equals("admin") && password.equals("password");
 
         if (validAttempt) {
